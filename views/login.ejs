@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <title><%= pageTitle %></title>
+  </head>
+  <body>
+    <h1><span class="g">Surplus</span><span class="b">Savor</span></h1>
+    <div class="login-container" action="/login" method="post">
+      <form class="login-form">
+        <h3>Login</h3>
+        <div>
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            required="required"
+          />
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            required="required"
+          />
+        </div>
+
+        <button class="btn-login" type="submit">Next</button>
+
+        <p>
+          Don't have an account? <br />
+          <a href="/register">Register</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
